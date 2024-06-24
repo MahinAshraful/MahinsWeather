@@ -9,6 +9,7 @@ function App() {
             <div className="overlay">
                 <video src={video} autoPlay loop muted></video>
                 <div className="container">
+                  <p>test</p>
                 </div>
             </div>
         </div>
