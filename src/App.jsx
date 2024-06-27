@@ -1,8 +1,12 @@
 import './index.css'
 import video from './assets/video.mp4'
-import Weathercard from './component/Weathercard'
+import WeatherSearch from './component/WeatherSearch'
+import Weather from './component/Weather'
+
+import { useState } from 'react'
 
 function App() {
+  const [data, setData] = useState({});
 
   return (
     <>
@@ -10,7 +14,8 @@ function App() {
             <div className="overlay">
                 <video src={video} autoPlay loop muted></video>
                 <div className="container">
-                  <Weathercard></Weathercard>
+                <WeatherSearch setData={setData} />
+                  <Weather weatherData = {data}/>
                 </div>
             </div>
         </div>
