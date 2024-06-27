@@ -1,5 +1,6 @@
 import './index.css'
 import video from './assets/video.mp4'
+import Weathercard from './component/Weathercard'
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
             <div className="overlay">
                 <video src={video} autoPlay loop muted></video>
                 <div className="container">
-                  <p>test</p>
+                  <Weathercard></Weathercard>
                 </div>
             </div>
         </div>
